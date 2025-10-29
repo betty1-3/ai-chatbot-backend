@@ -16,7 +16,7 @@ if (!HF_TOKEN) {
 }
 
 // ✅ Allow requests only from your frontend (Vercel app)
-app.use(cors({ origin: 'https://aichatbot-inky-sigma.vercel.app' }));
+app.use(cors({ origin: 'https://aichatbot1-swart.vercel.app/' }));
 app.use(express.json({ limit: '128kb' }));
 
 // ===============================
@@ -92,3 +92,4 @@ app.post('/api/ask-llm', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ LLM backend listening on port ${PORT}`);
 });
+
